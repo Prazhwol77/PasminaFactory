@@ -24,6 +24,9 @@ Route::get('/Home', function () {
 Route::get('/Products',function(){
     return view('Products');
 });
+Route::get('/About',function(){
+    return view('About');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');

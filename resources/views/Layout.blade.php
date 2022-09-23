@@ -18,12 +18,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 	<link rel="stylesheet" href="/assets/css/styles.min.css?h=e312b15a4b5118d6f747374f94b78fb6">
 
-	<!--javascript-->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-	<script src="/assets/js/script.min.js?h=9ef33277047247886807476a1f3bec36"></script>
+	
 </head>
 <body style="background: #EEE3CB;">
+	<div>
+		
+	</div>
 	<h1 class="text-center text-white d-none d-lg-block site-heading" style="height: 50px;">
 		<span class="site-heading-lower" style="font-family: 'Advent Pro', sans-serif;">Nepal Agro Craft</span>
 		<small class="text-primary site-heading-upper mb-3" style="font-size: 21px;font-family: 'Akaya Telivigala', serif;">We are here to serve&nbsp;</small>
@@ -44,7 +44,7 @@
 						<a class="nav-link" href="/Products">Products</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/about.html">About us</a>
+						<a class="nav-link" href="/About">About us</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="/store.html">Store</a>
@@ -72,22 +72,26 @@
 	<section>
 		@yield('index')
 		@yield('products')
+		@yield('aboutus')
 	</section>
 	<footer class="text-center footer text-faded py-5">
 		<div class="container"><p class="m-0 small">Copyright&nbsp;©&nbsp;Nepal Agro Craft 2022</p>
 		</div>
 	</footer>
 	<script type="text/javascript" >
-    let image=document.getElementById('image');
-	let image1=document.getElementById('image1');
-	let images=['/assets/img/star-sky.jpg','/assets/img/about.jpg']
-	setInterval(function(){
-		let random=Math.floor(Math.random()*2);
-		image.src=images[random];
-		image1.src=images[random];
-	},3000);
-</script>
+	    let image=document.getElementById('image');
+		let image1=document.getElementById('image1');
+		let images=['/assets/img/star-sky.jpg','/assets/img/about.jpg']
+		setInterval(function(){
+			let random=Math.floor(Math.random()*2);
+			image.src=images[random];
+			image1.src=images[random];
+		},3000);
+	</script>
+<!--javascript-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<script src="/assets/js/script.min.js?h=9ef33277047247886807476a1f3bec36"></script>
 
-	
 </body>
 </html>
